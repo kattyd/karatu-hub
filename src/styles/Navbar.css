@@ -1,0 +1,86 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  background-color: var(--cloud-white);
+  border-bottom: var(--border-thick);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.lopsided-book-icon {
+  background-color: var(--primary-yellow);
+  padding: 10px;
+  border-radius: 14px;
+  border: var(--border-thick);
+  box-shadow: var(--shadow-pop);
+  transform: rotate(-8deg); /* Lopsided aesthetic */
+  transition: transform 0.2s ease;
+}
+
+.nav-brand:hover .lopsided-book-icon {
+  transform: rotate(4deg) scale(1.05);
+}
+
+.brand-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--dark-slate);
+  display: block;
+  line-height: 1;
+}
+
+.team-tag {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--accent-orange);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 12px;
+  background-color: var(--cream-white);
+  padding: 6px;
+  border-radius: 999px;
+  /* border: var(--border-thick); */
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--dark-slate);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-btn.active, .nav-btn:hover {
+  background-color: var(--vibrant-blue);
+  color: white;
+}
+
+.hausa-flag-badge {
+  background-color: #DCFCE7;
+  color: #15803D;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 2px solid #15803D;
+  font-weight: 800;
+  font-size: 0.85rem;
+}

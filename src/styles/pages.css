@@ -1,0 +1,318 @@
+.page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px 80px;
+  position: relative;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 60px 0 60px;
+  position: relative;
+}
+
+.hero-badge {
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 3.4rem;
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 24px;
+  color: var(--dark-slate);
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.3rem;
+  }
+}
+
+.highlight-blue {
+  color: var(--vibrant-blue);
+  position: relative;
+  display: inline-block;
+  font-size: 2.5rem;
+}
+
+.highlight-blue::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background-color: var(--bright-yellow);
+  z-index: -1;
+  border-radius: 6px;
+  transform: rotate(-1deg);
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  max-width: 760px;
+  margin: 0 auto 36px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Bento Grid */
+.bento-section {
+  margin-top: 40px;
+}
+
+.section-heading {
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 36px;
+  color: var(--dark-slate);
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bento-card {
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-pop);
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bento-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-pop-lg);
+}
+
+.bento-kids {
+  background-color: #FEF08A;
+}
+
+.bento-teens {
+  background-color: #BAE6FD;
+}
+
+.bento-teachers {
+  background-color: #FFEDD5;
+}
+
+.bento-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.bento-card h3 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.bento-card p {
+  color: #334155;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.mini-tag {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 800;
+  font-size: 0.8rem;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: white;
+  border: 2px solid #0F172A;
+  box-shadow: 2px 2px 0px #0F172A;
+}
+
+/* Chalkboard Preview Box */
+.chalkboard-preview-card {
+  margin-top: 70px;
+  background-color: var(--chalkboard-green);
+  color: white;
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  border: 10px solid #5C3A21;
+  box-shadow: var(--shadow-pop-lg);
+  position: relative;
+}
+
+.chalkboard-header h3 {
+  font-size: 1.8rem;
+  color: var(--bright-yellow);
+  margin-bottom: 6px;
+}
+
+.chalkboard-header p {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.3rem;
+  color: #E2E8F0;
+}
+
+.chalkboard-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.term-chip {
+  background: rgba(255, 255, 255, 0.12);
+  border: 2px dashed rgba(255, 255, 255, 0.5);
+  padding: 12px 22px;
+  border-radius: 14px;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.term-chip:hover {
+  transform: scale(1.05) rotate(-2deg);
+  background: rgba(255, 255, 255, 0.25);
+  border-color: var(--bright-yellow);
+}
+
+.term-chip strong {
+  color: var(--bright-yellow);
+  font-size: 1.5rem;
+}
+
+/* Hausa Roadmap Section */
+.page-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-header h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin: 16px 0;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  color: #475569;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 800px) {
+  .roadmap-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.roadmap-step {
+  background: white;
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-pop);
+  position: relative;
+}
+
+.roadmap-step.active {
+  border-color: var(--vibrant-blue);
+  background-color: var(--light-sky);
+}
+
+.step-num {
+  font-family: 'Fredoka', cursive;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--accent-orange);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.roadmap-step h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.roadmap-step p {
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* Mission Box */
+.mission-content-box {
+  background: white;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-pop-lg);
+  margin-top: 30px;
+}
+
+.mission-content-box h2 {
+  font-size: 2rem;
+  color: var(--vibrant-blue);
+  margin-bottom: 16px;
+}
+
+.mission-content-box p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #334155;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.team-card {
+  background: white;
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-pop);
+  text-align: center;
+}
+
+.team-card .avatar {
+  font-size: 3.5rem;
+  margin-bottom: 16px;
+}
+
+.team-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.team-card p {
+  color: #64748B;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

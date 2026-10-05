@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+:root {
+  --primary-yellow: #FFC72C;
+  --bright-yellow: #FFE885;
+  --accent-orange: #FF5722;
+  --soft-orange: #FF8A65;
+  --vibrant-blue: #1D4ED8;
+  --sky-blue: #38BDF8;
+  --light-sky: #E0F2FE;
+  --chalkboard-green: #1B4332;
+  --chalk-white: #F8FAFC;
+  --dark-slate: #0F172A;
+  --cream-bg: #FFFDF5;
+  --cloud-white: #FFFFFF;
+  --border-thick: 1px solid #0F172A;
+  --shadow-pop: 3px 3px 0px #0F172A;
+  /* --shadow-pop-lg: 8px 8px 0px #0F172A; */
+  --radius-lg: 24px;
+  --radius-md: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+h1, h2, h3, h4, .brand-title, .btn-primary, .nav-btn {
+  font-family: "Barrio", system-ui;
+}
+
+body {
+  background-color: var(--cream-bg);
+  color: var(--dark-slate);
+  overflow-x: hidden;
+  /* Cloud & Star pattern background overlay */
+  background-image: 
+    radial-gradient(#2563EB 0.6px, transparent 1.6px),
+    radial-gradient(#FF6B35 0.6px, var(--cream-bg) 1.6px);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--cream-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-yellow);
+  border: var(--border-thick);
+  border-radius: 999px;
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.7rem;
+  border: var(--border-thick);
+  box-shadow: 3px 3px 0px #0F172A;
+}
+
+.badge-yellow { background-color: var(--primary-yellow); color: var(--dark-slate); }
+.badge-orange { background-color: var(--accent-orange); color: white; }
+.badge-blue { background-color: var(--light-sky); color: var(--vibrant-blue); }
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--accent-orange);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border: var(--border-thick);
+  box-shadow: var(--shadow-pop);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s;
+}
+
+.btn-primary:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px 0px #0F172A;
+  background-color: #F97316;
+}
+
+.btn-primary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #0F172A;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--dark-slate);
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border: var(--border-thick);
+  box-shadow: var(--shadow-pop);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-secondary:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px 0px #0F172A;
+  background-color: var(--bright-yellow);
+}
+
+.btn-secondary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #0F172A;
+}
