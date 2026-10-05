@@ -6,7 +6,7 @@ export default function ChalkboardTransition({ isTransitioning, onComplete }) {
     if (isTransitioning) {
       const timer = setTimeout(() => {
         onComplete();
-      }, 8000);
+      }, 3000);
       return () => clearTimeout(timer);
     }
   }, [isTransitioning, onComplete]);
